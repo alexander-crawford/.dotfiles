@@ -1,0 +1,9 @@
+bind-key O open-all-unread-in-browser-and-mark-read
+auto-reload no
+highlight feedlist "---.*---" yellow default bold
+highlight feedlist ".*0/0.." default default invis
+browser firefox
+delete-read-articles-on-quit yes
+show-title-bar no
+swap-title-and-hints yes
+max-browser-tabs 20

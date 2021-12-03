@@ -1,0 +1,17 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "9120f99f-85e0-43d9-abcf-f3c87004a54f"
+  core:
+    autoHideMenuBar: true
+    telemetryConsent: "limited"
+  editor:
+    showIndentGuide: true
+    softWrap: true
+  "exception-reporting":
+    userId: "5aaaf8b6-a7c3-4ccd-9059-c67b2af52feb"
+  "markdown-preview": {}
+  minimap:
+    displayCodeHighlights: false
+  welcome:
+    showOnStartup: false
