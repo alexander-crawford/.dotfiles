@@ -6,6 +6,7 @@
     autoHideMenuBar: true
     telemetryConsent: "limited"
   editor:
+    scrollPastEnd: true
     showIndentGuide: true
     softWrap: true
   "exception-reporting":
