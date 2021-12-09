@@ -9,6 +9,7 @@
     scrollPastEnd: true
     showIndentGuide: true
     softWrap: true
+    softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "5aaaf8b6-a7c3-4ccd-9059-c67b2af52feb"
   "markdown-preview": {}
