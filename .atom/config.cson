@@ -4,7 +4,7 @@
       _analyticsUserId: "9120f99f-85e0-43d9-abcf-f3c87004a54f"
   core:
     autoHideMenuBar: true
-    telemetryConsent: "limited"
+    telemetryConsent: "no"
   editor:
     scrollPastEnd: true
     showIndentGuide: true
