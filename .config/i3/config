@@ -226,10 +226,6 @@ bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN
 default_border pixel 2
 
 # DESKTOP ONLY
-# open applications on set workspaces
-assign [class="Firefox"] 1
-assign [class="Atom"] 1
-assign [class="Xfce4-terminal"] 2
 # rotate vertical monitor
 exec --no-startup-id xrandr --output DVI-D-1 --rotate right --right-of HDMI-1
 # make middle moditor the primary monitor
