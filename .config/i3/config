@@ -226,12 +226,9 @@ bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN
 default_border pixel 2
 
 # DESKTOP ONLY
-# rotate vertical monitor
-exec --no-startup-id xrandr --output DVI-D-1 --rotate right --right-of HDMI-1
-# make middle moditor the primary monitor
-exec --no-startup-id xrandr --output HDMI-1 --primary
-# set workspaces to monitors
-workspace $ws2 output DVI-D-1
-workspace $ws1 output HDMI-1
 # background image
 exec --no-startup-id feh --recursive --bg-tile --randomize ~/.config/i3/background_images/*
+
+# Rotate left monitor and make hdmi primary monitor 
+exec xrandr --output DVI-D-1 --mode 1920x1080 --pos 1920x0 --rotate right --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off
+workspace 1 output HDMI-1
