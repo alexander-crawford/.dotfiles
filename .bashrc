@@ -141,7 +141,7 @@ function live-firefox {
 }
 
 function live-script {
-  ls $2 | entr -c $1 $2
+  ag -l | entr -c $1 
 }
 
 # Color man pages
