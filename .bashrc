@@ -123,7 +123,6 @@ alias tree='tree -C' # color tree
 alias mv='mv -in'
 alias youtube-dlU='sudo pip3 install -U youtube-dl'
 alias xclip="xclip -selection c"
-alias cat="batcat"
 alias newmusic='ls -cd /mnt/BarraCuda1/Audio/*/* | head -n 10 | cut -c 22-'
 alias rm='rm -I'
 
