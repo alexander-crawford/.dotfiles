@@ -109,3 +109,43 @@
 |find the next x where x is a charecter on the line|fx|
 |find the previous x where x is a charecter on the line|Fx|
 |find the character before the next x where x is a charecter on the line|tx|
+|||
+|Change from the cursor to the top of the screen|cH|
+|Delete from the cursor to the top of the screen|dH|
+|Yank from the cursor to the top of the screen|yH|
+|||
+|Change from the cursor to the bottom of the screen|cL|
+|Delete from the cursor to the bottom of the screen|dL|
+|Yank from the cursor to the bottom of the screen|yL|
+|||
+|Change from the cursor to the next line|c+|
+|Delete from the cursor to the next line|d+|
+|Yank from the cursor to the next line|y+|
+|||
+|Change from the cursor to the 5th column of the current line|c5\||
+|Delete from the cursor to the 5th column of the current line|d5\||
+|Yank from the cursor to the 5th column of the current line|y5\||
+|||
+|Change from the cursor to the second sentence following|2c)|
+|Delete from the cursor to the second sentence following|2d)|
+|Yank from the cursor to the second sentence following|2y)|
+|||
+|Change from the cursor to the previous paragraph|c{|
+|Delete from the cursor to the previous paragraph|d{|
+|Yank from the cursor to the previous paragraph|y{|
+|||
+|Change from the cursor to the pattern|c/pattern|
+|Delete from the cursor to the pattern|d/pattern|
+|Yank from the cursor to the pattern|y/pattern|
+|||
+|Change from the cursor to the next pattern|cn|
+|Delete from the cursor to the next pattern|dn|
+|Yank from the cursor to the next pattern|yn|
+|||
+|Change from the cursor to the end of the file|cG|
+|Delete from the cursor to the end of the file|dG|
+|Yank from the cursor to the end of the file|yG|
+|||
+|Change from the cursor to line 13|c13G|
+|Delete from the cursor to line 13|d13G|
+|Yank from the cursor to line 13|y13G|
