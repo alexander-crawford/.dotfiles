@@ -149,3 +149,18 @@
 |Change from the cursor to line 13|c13G|
 |Delete from the cursor to line 13|d13G|
 |Yank from the cursor to line 13|y13G|
+|||
+|Open a file at a line number|vim -c n file|
+|Open a file at the first occurrence of a pattern|vim -c /pattern file|
+|Open a file at the last line|vim + file|
+|||
+|Read only mode|vim -R file|
+|Move out of read only mode|:w!|
+|List the current swap files|vim -r file|
+|||
+|Recover second to last delete|"2p|
+|Iterate through deletes|"1p followed by u .|
+|||
+|Yank the current line to the d register|"dyy|
+|Yank and append append the current line to the d register|"dyy|
+|Put the contents of the d register|"dp|
