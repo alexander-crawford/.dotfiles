@@ -162,5 +162,5 @@
 |Iterate through deletes|"1p followed by u .|
 |||
 |Yank the current line to the d register|"dyy|
-|Yank and append append the current line to the d register|"dyy|
+|Yank and append append the current line to the d register|"Dyy|
 |Put the contents of the d register|"dp|
