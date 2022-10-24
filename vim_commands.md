@@ -164,3 +164,8 @@
 |Yank the current line to the d register|"dyy|
 |Yank and append append the current line to the d register|"Dyy|
 |Put the contents of the d register|"dp|
+|||
+|Place marker a|ma|
+|Delete to marker|d'a|
+|Yank to marker|y'a|
+|Return to the line where the marker is placed|''|
