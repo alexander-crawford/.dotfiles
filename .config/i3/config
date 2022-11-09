@@ -188,13 +188,13 @@ client.background       #ffffff
 # finds out, if available)
 bar {
         # change from i3status to i3blocks
-        status_command xfce4-panel
+        status_command i3status 
         # show bar only one primary (middle) monitor
         output primary
         # move the bar to the top of the screen
         position top
         # hide bar
-        mode hide
+        # mode hide
 
         # bar colors
         colors {
