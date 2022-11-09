@@ -169,3 +169,27 @@
 |Delete to marker|d'a|
 |Yank to marker|y'a|
 |Return to the line where the marker is placed|''|
+|||
+|:1p|Print the first line of the document|
+|:1,3|Print lines 1 to 3|
+|:s/replace/replace|Replace a word on the given line|
+|:10|Go to line 10|
+|||
+|:3,10d|Delete lines 3 through 10|
+|:150,160m10|Move lines 150 to 160 to under line 10|
+|:150,160co10|Copy lines 150 to 160 to under line 10|
+|||
+|:1,10#|Display lines one through 10 with lines numbers|
+|:=|Print the total number of lines|
+|:.=|Print the line number of the current line|
+|:/pattern/=|Print the line number of the next line that matches the pattern|
+|||
+|.|Stands for the current line|
+|$|Stands for the last line|
+|%|Stands for every line|
+|0|Stands for the very first line in a file (-1)|
+|||
+|:.,$d|Delete from the current line to the end of the file|
+|:20,.m$|Move from line 20 to the current lint to the end of the file|
+|:%d|Delete all lines in a file|
+|:%t$|Copy all lines and place them at the end of the file|
