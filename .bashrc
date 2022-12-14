@@ -125,6 +125,7 @@ alias youtube-dlU='sudo pip3 install -U youtube-dl'
 alias xclip="xclip -selection c"
 alias newmusic='ls -cd /mnt/BarraCuda1/Audio/*/* | head -n 10 | cut -c 22-'
 alias rm='rm -I'
+alias gits='git status'
 
 function pretty_csv {
     column -t -s, -n "$@" | less -F -S -X -K
