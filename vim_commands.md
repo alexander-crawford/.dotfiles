@@ -193,3 +193,15 @@
 |:20,.m$|Move from line 20 to the current lint to the end of the file|
 |:%d|Delete all lines in a file|
 |:%t$|Copy all lines and place them at the end of the file|
+|||
+|d/pattern|Delete from the cursor to the pattern|
+|:/pattern/d|Delete the next line containing the pattern|
+|:/pattern/+d|Delete the line below the next line containing the pattern|
+|:/pattern1/,/pattern2/d|Delete from the first pattern to the second pattern|
+|:.,/pattern/m23|Take the text from the current line to the line containing the pattern and place it on line 23|
+|:/pattern/;+10 p|Print the next line that contains the pattern and the 10 lines that follow it|
+|||
+|:g/pattern|Move to the last occurrence of the pattern in the file|
+|:g/pattern/p|Find and display all lines in the file containing the pattern|
+|:g!/pattern/nu|Find all the lines in a file that don't contain the patter, display the line number of each line found|
+|:60,120g/pattern/p|Find and display all lines between 60 and 120 that contain the pattern|
