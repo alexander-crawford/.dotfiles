@@ -205,3 +205,20 @@
 |:g/pattern/p|Find and display all lines in the file containing the pattern|
 |:g!/pattern/nu|Find all the lines in a file that don't contain the patter, display the line number of each line found|
 |:60,120g/pattern/p|Find and display all lines between 60 and 120 that contain the pattern|
+|\||Command seperator|
+|||
+|:w|Save the buffer to the file|
+|:q|Quit the editor and return to the sheel prompt|
+|:wq|Write to the file and then quit, the modification time of the file is updated|
+|:x|Write the file and then quit, the file is written only if the file has beed modified|
+|:w!|Write to file, override warnings|
+|:q!|Quit to editor, override warnings|
+|:w new-filename|Save the buffer as a new file|
+|||
+|:1,20w filename|Save lines 1 to 20 as a new file|
+|:21,40w >> filename|Append lines 21 to 40 as a new file|
+|:r filename|Copy in the contents of another file below the cursor|
+|:100r filename|Copy in the contents of another file below line 100|
+|:$r filename|Copy in the contents of another file to the end of the current file|
+|:0r filename|Copy in the contents of another file to the start of the current file|
+|:/pattern/r filename|Copy in the contents of the file after the pattern|
