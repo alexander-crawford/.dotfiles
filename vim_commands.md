@@ -170,6 +170,8 @@
 |Yank to marker|y'a|
 |Return to the line where the marker is placed|''|
 |||
+|TODO|From here the columns are changed around, need to change back|
+|||
 |:1p|Print the first line of the document|
 |:1,3|Print lines 1 to 3|
 |:s/replace/replace|Replace a word on the given line|
@@ -222,3 +224,59 @@
 |:$r filename|Copy in the contents of another file to the end of the current file|
 |:0r filename|Copy in the contents of another file to the start of the current file|
 |:/pattern/r filename|Copy in the contents of the file after the pattern|
+
+# Editing multiple files 
+|vim file1 file2|Open two files|
+|:n move from file1 to file2||
+|:args or :ar|Displays the argument list in the stats line with brackets around the current file|
+|:rewind or :rew|Opens the first file shown in the :ar list|
+|:last|Opens the last file in that list|
+|:prev|Go back to the previous file|
+|:e filename|Call in a new file|
+|:e # / %|Two files are remembered, % - current file and # - alternate file|
+|:e!|Discard edits|
+|:w %.new|Write the current butter to a new file while appending new|
+|CTRL-^|Switch back to the previously opened file|
+|4yy :e file2 p|Yank from lines from one file and place then in another|
+
+# Chapter 6 Global Replacement
+## Substitute
+|:s/old/new|Changes the first occurence of old to new|
+|:s/old/new/g|Changes every occurence of old to new on the current line|
+|:50,100s/old/new/g|Changes every occurence of old to new from lines 50 to 100|
+|:%s/old/new/g|Changes every occurence of old to new on every line in the file|
+
+## Confirming substitutions
+|:s/old/new/gc|Confirm each substitution|
+|:h s_flags|Options given when using the 'c' flag|
+|'y'|to substitute this match|
+|'l'|to substitute this match and then quit ("last")|
+|'n'|to skip this match|
+|<Esc>|to quit substituting|
+|'a'|to substitute this and all remaining matches|
+|'q'|to quit substituting|
+|CTRL-E|to scroll the screen up|
+|CTRL-Y|to scroll the screen down|
+
+## An alternative method for find and replace
+|/word|Find a word|
+|cw new_word ESC|Change the new word|
+|n|Go to the next word|
+|.|Repeat the last action (change word)|
+
+## Doing things globally across a file
+|:g/pattern/command|Perform the command on each line that matches the pattern|
+|:g/ONE/d|Delete all lines containing the word ONE|
+|:g/# TODO/s/TODO/DONE|Change each todo comment to a done comment, a trailing /g is required to replace all instance of TODO on that line, not just the first|
+
+## Regex 
+|[^0-9]|Matches any character that is not a digit|
+|\( \)|Save the sub pattern in a holding register, can be retrieved with \1|
+|\<ac|Matches 'ac' at the start of a word, for example 'act'|
+|\>ac|Matches 'ac' at the end of a word, for example 'maniac'|
+
+## Metacharacters in replacement strings 
+|:%s/Test/&ed/|Replace 'Test' with 'Tested', '&' represents all the text mathed by the search pattern|
+|:%s/fold/~/|Replaces fold with folded, '~' represents the replacment text of the previous command|
+|\u and \l|Change a holding register to upper or lower case|
+|\U and \L|Change a holding register to upper or lower case to the end of the string or until another \U or \L is reached|
