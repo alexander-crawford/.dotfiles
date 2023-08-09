@@ -224,8 +224,7 @@
 |:$r filename|Copy in the contents of another file to the end of the current file|
 |:0r filename|Copy in the contents of another file to the start of the current file|
 |:/pattern/r filename|Copy in the contents of the file after the pattern|
-
-# Editing multiple files 
+|Editing multiple files ||
 |vim file1 file2|Open two files|
 |:n move from file1 to file2||
 |:args or :ar|Displays the argument list in the stats line with brackets around the current file|
@@ -238,15 +237,12 @@
 |:w %.new|Write the current butter to a new file while appending new|
 |CTRL-^|Switch back to the previously opened file|
 |4yy :e file2 p|Yank from lines from one file and place then in another|
-
-# Chapter 6 Global Replacement
-## Substitute
+|Substitute||
 |:s/old/new|Changes the first occurence of old to new|
 |:s/old/new/g|Changes every occurence of old to new on the current line|
 |:50,100s/old/new/g|Changes every occurence of old to new from lines 50 to 100|
 |:%s/old/new/g|Changes every occurence of old to new on every line in the file|
-
-## Confirming substitutions
+|Confirming substitutions||
 |:s/old/new/gc|Confirm each substitution|
 |:h s_flags|Options given when using the 'c' flag|
 |'y'|to substitute this match|
@@ -257,25 +253,21 @@
 |'q'|to quit substituting|
 |CTRL-E|to scroll the screen up|
 |CTRL-Y|to scroll the screen down|
-
-## An alternative method for find and replace
+|An alternative method for find and replace||
 |/word|Find a word|
 |cw new_word ESC|Change the new word|
 |n|Go to the next word|
 |.|Repeat the last action (change word)|
-
-## Doing things globally across a file
+|Doing things globally across a file||
 |:g/pattern/command|Perform the command on each line that matches the pattern|
 |:g/ONE/d|Delete all lines containing the word ONE|
 |:g/# TODO/s/TODO/DONE|Change each todo comment to a done comment, a trailing /g is required to replace all instance of TODO on that line, not just the first|
-
-## Regex 
+|Regex ||
 |[^0-9]|Matches any character that is not a digit|
 |\( \)|Save the sub pattern in a holding register, can be retrieved with \1|
 |\<ac|Matches 'ac' at the start of a word, for example 'act'|
 |\>ac|Matches 'ac' at the end of a word, for example 'maniac'|
-
-## Metacharacters in replacement strings 
+|Metacharacters in replacement strings||
 |:%s/Test/&ed/|Replace 'Test' with 'Tested', '&' represents all the text mathed by the search pattern|
 |:%s/fold/~/|Replaces fold with folded, '~' represents the replacment text of the previous command|
 |\u and \l|Change a holding register to upper or lower case|
