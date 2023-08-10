@@ -126,6 +126,8 @@ alias xclip="xclip -selection c"
 alias newmusic='ls -cd /mnt/BarraCuda1/Audio/*/* | head -n 10 | cut -c 22-'
 alias rm='rm -I'
 alias gits='git status'
+alias getmusicdownloaditem='todo-txt list @musicdownload | sort | head -n2 | tail -n1 | cut -d " " -f2- | cut -d "@" -f1 | xclip'
+alias domusicdownloaditem='todo-txt do "$(todo-txt list @musicdownload | sort | head -n2 | tail -n1 | cut -d " " -f-1)"'
 
 function pretty_csv {
     column -t -s, -n "$@" | less -F -S -X -K
@@ -155,3 +157,4 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 # Vim mode in terminal 
 set -o vi 
+VISUAL=vim
