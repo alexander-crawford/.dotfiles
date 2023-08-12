@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install dependencies
-sudo apt install i3 -y
+sudo apt install i3 lxappearance -y
 
 # Create sym links
 ln -sf ~/.dotfiles/.bashrc ~/.bashrc
