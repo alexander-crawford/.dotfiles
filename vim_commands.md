@@ -272,3 +272,11 @@
 |:%s/fold/~/|Replaces fold with folded, '~' represents the replacment text of the previous command|
 |\u and \l|Change a holding register to upper or lower case|
 |\U and \L|Change a holding register to upper or lower case to the end of the string or until another \U or \L is reached|
+|More substitution tricks||
+|:s|Repeat the last subsitiution|
+|:%&g|Make the last subsitiution|
+|&|Repeat the last subsitiution in one key stroke|
+|:~|The last regular expression used in any command|
+|:set edcompatible|global and confirmation flags are remembered and applied to the next subsitution|
+|Pattern matching examples||
+|:%s/\<child\>/&ren/g|Change every instance of child with children|
