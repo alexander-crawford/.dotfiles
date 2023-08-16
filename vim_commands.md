@@ -280,3 +280,10 @@
 |:set edcompatible|global and confirmation flags are remembered and applied to the next subsitution|
 |Pattern matching examples||
 |:%s/\<child\>/&ren/g|Change every instance of child with children|
+|:%s:/home/tim:/home/linda:g|Change /home/tim to /home/linda, uses : as a delimter, forward slashes would need to be escaped such as \/|
+|`:%s:ENTER:<I>&</I>:g`|Place the word enter inside italic html tags, & represents the matched text|
+|:1,10s/\./;/g|Replace periods with semicolons between lines 1 and 10|
+|:%s[hH]elp/\U&/g|Replace all occurrences of help or Help with HELP|
+|:g/^$/g|Delete all empty lines, matches the start of a line and the end of a line with nothing in-between|
+|`:d/^[ tab]*$/d`|Delete all empty lines plus any lines that contain only whitespace|
+|`:%s/^  *\(.*\)/\1/`|Delete all the leading spaces on every line|
