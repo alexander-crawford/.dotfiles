@@ -1,4 +1,4 @@
-|Description|Operation|
+|Operation|Description|
 |---|---|
 |cw or cW|Change one word|
 |dw or dW|Delete one word|
