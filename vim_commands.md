@@ -1,176 +1,174 @@
 |Description|Operation|
 |---|---|
-|Change one word|cw or cW|
-|Delete one word|dw or dW|
-|Yank one word|yw or yW|
+|cw or cW|Change one word|
+|dw or dW|Delete one word|
+|yw or yW|Yank one word|
 |||
-|Change three words back|c3b|
-|Delete three words back|d3b|
-|Yank three words back|y3b|
+|c3b|Change three words back|
+|d3b|Delete three words back|
+|y3b|Yank three words back|
 |||
-|Change one line|cc|
-|Delete one line|dd|
-|Yank one line|Y|
+|cc|Change one line|
+|dd|Delete one line|
+|Y|Yank one line|
 |||
-|Change to the end of the line|C|
-|Delete to the end of the line|D|
-|Yank to the end of the line|y\$|
+|C|Change to the end of the line|
+|D|Delete to the end of the line|
+|y\$|Yank to the end of the line|
 |||
-|Change to the start of the line|c0|
-|Delete to the start of the line|d0|
-|Yank to the start of the line|y0|
+|c0|Change to the start of the line|
+|d0|Delete to the start of the line|
+|y0|Yank to the start of the line|
 |||
-|Change one character|r|
-|Delete one character|x|
-|Yank one character|yl|
+|r|Change one character|
+|x|Delete one character|
+|yl|Yank one character|
 |||
-|Change two characters|2s|
-|Delete two characters|2x|
-|Yank two characters|2yl|
+|2s|Change two characters|
+|2x|Delete two characters|
+|2yl|Yank two characters|
 |||
-|Movement|←, ↓, ↑, →|
+|←, ↓, ↑, →|Movement|
 |||
-|To first character of next line|+|
-|To first character of previous line|-|
+|+|To first character of next line|
+|-|To first character of previous line|
 |||
-|To end of word|e or E|
-|Forward by word|w or W|
-|Backward by word|b or B|
+|e or E|To end of word|
+|w or W|Forward by word|
+|b or B|Backward by word|
 |||
-|To end of line|$|
-|To beginning of line|0|
+|$|To end of line|
+|0|To beginning of line|
 |||
-|To a particular line|G|
+|G|To a particular line|
 |||
-|Place text from register|p or P|
+|p or P|Place text from register|
 |||
-|Start Vim, open file if specified|vim file|
-|Save edits, quit file|ZZ|
-|No saving of edits, quit file|:q! ENTER|
+|vim file|Start Vim, open file if specified|
+|ZZ|Save edits, quit file|
+|:q! ENTER|No saving of edits, quit file|
 |||
-|Insert text at current position|i|
-|Insert text at beginning of line|I|
-|Append text at current position|a|
-|Append text to end of line|A|
-|Open new line below cursor for new text|o|
-|Open new line above cursor for new text|O|
-|Put deleted text after cursor or below current line|p|
-|Put deleted text before cursor or above current line|P|
-|Replace the character under the cursor|r|
-|Overstrike existing characters with new text|R|
-|Delete the current character and enter insert mode|s|
-|Delete line and substitute text|S|
-|Delete the character under the cursor|x|
-|Delete the character in front of the cursor|X|
-|Join current and next line|J|
+|i|Insert text at current position|
+|I|Insert text at beginning of line|
+|a|Append text at current position|
+|A|Append text to end of line|
+|o|Open new line below cursor for new text|
+|O|Open new line above cursor for new text|
+|p|Put deleted text after cursor or below current line|
+|P|Put deleted text before cursor or above current line|
+|r|Replace the character under the cursor|
+|R|Overstrike existing characters with new text|
+|s|Delete the current character and enter insert mode|
+|S|Delete line and substitute text|
+|x|Delete the character under the cursor|
+|X|Delete the character in front of the cursor|
+|J|Join current and next line|
 |||
-|Toggle case|~|
-|Repeat last action|.|
-|Undo last change|u|
+|~|Toggle case|
+|.|Repeat last action|
+|u|Undo last change|
 |||
-|move the screen foward|CTRL + f| 
-|move the screen back|CTRL + b|
-|move the screen down|CTRL + d| 
-|move the screen up|CTRL + u| 
-|move up by one line|CTRL + e| 
-|move down by one line|CTRL + y| 
+|CTRL + f|move the screen foward| 
+|CTRL + b|move the screen back|
+|CTRL + d|move the screen down| 
+|CTRL + u|move the screen up| 
+|CTRL + e|move up by one line| 
+|CTRL + y|move down by one line| 
 |||
-|move the cursor to the top of the screen|z (+) ENTER| 
-|move the cursor to the middle of the screen|z.|
-|move the cursor to the bottom of the screen|z-| 
-|Redraw the screen|CTRL + l| 
+|z (+) ENTER|move the cursor to the top of the screen| 
+|z.|move the cursor to the middle of the screen|
+|z-|move the cursor to the bottom of the screen| 
+|CTRL + l|Redraw the screen| 
 |||
-|move to the fist line on the screen|H|
-|move to the middle line on the screen|M|
-|move to the last line on the screen|L|
-|move to the nth from the top of the screen|nH|
-|move to the nth from the bottom of the screen|nL|
+|H|move to the fist line on the screen|
+|M|move to the middle line on the screen|
+|L|move to the last line on the screen|
+|nH|move to the nth from the top of the screen|
+|nL|move to the nth from the bottom of the screen|
 |||
-|move to the first non blank character of the next line|ENTER or +|
-|move to the first non blank character of the previous line|-|
-|move to the first non blank character of the current line|^| 
-|move to the character in the nth column|n\||
+|ENTER or +|move to the first non blank character of the next line|
+|-|move to the first non blank character of the previous line|
+|^|move to the first non blank character of the current line| 
+||move to the character in the nth column|n\|
 |||
-|move to the end of the current word (punctuation and whitespace seperate words)|e|
-|move to the end of the current word (whitespace seperated words)|E|
-|move to the begining of the current or previous sentence|(|
-|move to the begining of the next sentence|)|
-|move to the begining of the current paragraph|{|
-|move to the begining of the next paragraph|}|
-|move to the begining of the current section|[[|
-|move to the begining of the next section|]]|
+|e|move to the end of the current word (punctuation and whitespace seperate words)|
+|E|move to the end of the current word (whitespace seperated words)|
+|(|move to the begining of the current or previous sentence|
+|)|move to the begining of the next sentence|
+|{|move to the begining of the current paragraph|
+|}|move to the begining of the next paragraph|
+|[[|move to the begining of the current section|
+|]]|move to the begining of the next section|
 |||
-|/text -- jump forwards to the text string in the document where it can be found|/text|
-|?text -- jump backwards to the text string in the document where it can be found|?text| 
-|repeat the search in the same direction|n| 
-|repeat the search in the opposite direction|N| 
-|Set searches to not wrap to either the end or start of the file|:set nowrapscan|
+|/text|/text -- jump forwards to the text string in the document where it can be found|
+|?text|?text -- jump backwards to the text string in the document where it can be found| 
+|n|repeat the search in the same direction| 
+|N|repeat the search in the opposite direction| 
+|:set nowrapscan|Set searches to not wrap to either the end or start of the file|
 |||
-|find the next x where x is a charecter on the line|fx|
-|find the previous x where x is a charecter on the line|Fx|
-|find the character before the next x where x is a charecter on the line|tx|
+|fx|find the next x where x is a charecter on the line|
+|Fx|find the previous x where x is a charecter on the line|
+|tx|find the character before the next x where x is a charecter on the line|
 |||
-|Change from the cursor to the top of the screen|cH|
-|Delete from the cursor to the top of the screen|dH|
-|Yank from the cursor to the top of the screen|yH|
+|cH|Change from the cursor to the top of the screen|
+|dH|Delete from the cursor to the top of the screen|
+|yH|Yank from the cursor to the top of the screen|
 |||
-|Change from the cursor to the bottom of the screen|cL|
-|Delete from the cursor to the bottom of the screen|dL|
-|Yank from the cursor to the bottom of the screen|yL|
+|cL|Change from the cursor to the bottom of the screen|
+|dL|Delete from the cursor to the bottom of the screen|
+|yL|Yank from the cursor to the bottom of the screen|
 |||
-|Change from the cursor to the next line|c+|
-|Delete from the cursor to the next line|d+|
-|Yank from the cursor to the next line|y+|
+|c+|Change from the cursor to the next line|
+|d+|Delete from the cursor to the next line|
+|y+|Yank from the cursor to the next line|
 |||
-|Change from the cursor to the 5th column of the current line|c5\||
-|Delete from the cursor to the 5th column of the current line|d5\||
-|Yank from the cursor to the 5th column of the current line|y5\||
+||Change from the cursor to the 5th column of the current line|c5\|
+||Delete from the cursor to the 5th column of the current line|d5\|
+||Yank from the cursor to the 5th column of the current line|y5\|
 |||
-|Change from the cursor to the second sentence following|2c)|
-|Delete from the cursor to the second sentence following|2d)|
-|Yank from the cursor to the second sentence following|2y)|
+|2c)|Change from the cursor to the second sentence following|
+|2d)|Delete from the cursor to the second sentence following|
+|2y)|Yank from the cursor to the second sentence following|
 |||
-|Change from the cursor to the previous paragraph|c{|
-|Delete from the cursor to the previous paragraph|d{|
-|Yank from the cursor to the previous paragraph|y{|
+|c{|Change from the cursor to the previous paragraph|
+|d{|Delete from the cursor to the previous paragraph|
+|y{|Yank from the cursor to the previous paragraph|
 |||
-|Change from the cursor to the pattern|c/pattern|
-|Delete from the cursor to the pattern|d/pattern|
-|Yank from the cursor to the pattern|y/pattern|
+|c/pattern|Change from the cursor to the pattern|
+|d/pattern|Delete from the cursor to the pattern|
+|y/pattern|Yank from the cursor to the pattern|
 |||
-|Change from the cursor to the next pattern|cn|
-|Delete from the cursor to the next pattern|dn|
-|Yank from the cursor to the next pattern|yn|
+|cn|Change from the cursor to the next pattern|
+|dn|Delete from the cursor to the next pattern|
+|yn|Yank from the cursor to the next pattern|
 |||
-|Change from the cursor to the end of the file|cG|
-|Delete from the cursor to the end of the file|dG|
-|Yank from the cursor to the end of the file|yG|
+|cG|Change from the cursor to the end of the file|
+|dG|Delete from the cursor to the end of the file|
+|yG|Yank from the cursor to the end of the file|
 |||
-|Change from the cursor to line 13|c13G|
-|Delete from the cursor to line 13|d13G|
-|Yank from the cursor to line 13|y13G|
+|c13G|Change from the cursor to line 13|
+|d13G|Delete from the cursor to line 13|
+|y13G|Yank from the cursor to line 13|
 |||
-|Open a file at a line number|vim -c n file|
-|Open a file at the first occurrence of a pattern|vim -c /pattern file|
-|Open a file at the last line|vim + file|
+|vim -c n file|Open a file at a line number|
+|vim -c /pattern file|Open a file at the first occurrence of a pattern|
+|vim + file|Open a file at the last line|
 |||
-|Read only mode|vim -R file|
-|Move out of read only mode|:w!|
-|List the current swap files|vim -r file|
+|vim -R file|Read only mode|
+|:w!|Move out of read only mode|
+|vim -r file|List the current swap files|
 |||
-|Recover second to last delete|"2p|
-|Iterate through deletes|"1p followed by u .|
+|"2p|Recover second to last delete|
+|"1p followed by u .|Iterate through deletes|
 |||
-|Yank the current line to the d register|"dyy|
-|Yank and append append the current line to the d register|"Dyy|
-|Put the contents of the d register|"dp|
+|"dyy|Yank the current line to the d register|
+|"Dyy|Yank and append append the current line to the d register|
+|"dp|Put the contents of the d register|
 |||
-|Place marker a|ma|
-|Delete to marker|d'a|
-|Yank to marker|y'a|
-|Return to the line where the marker is placed|''|
-|||
-|TODO|From here the columns are changed around, need to change back|
+|ma|Place marker a|
+|d'a|Delete to marker|
+|y'a|Yank to marker|
+|''|Return to the line where the marker is placed|
 |||
 |:1p|Print the first line of the document|
 |:1,3|Print lines 1 to 3|
