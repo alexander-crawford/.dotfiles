@@ -285,3 +285,9 @@
 |`:g/^$/g`|Delete all empty lines, matches the start of a line and the end of a line with nothing in-between|
 |`:g/^[ tab]*$/d`|Delete all empty lines plus any lines that contain only whitespace|
 |`:%s/^  *\(.*\)/\1/`|Delete all the leading spaces on every line|
+|`:.,+5s/$/./`|From the current line (.) to the next 5 lines (,+5) substitute (s) the end of the line ($) for a period (.)|
+|`:s/.*/\U&/`|Change every letter in a file to upper case, `\U` changes the replacement string to upper case, `&` replays the matched text|
+|`:g/^/mo0`|Reverse the order of lines in a file, takes each line in term and moves it to line imaginary line 0|
+|`:g!/Paid in full/s/$/Overdue`|Append "overdue" to each line not parked "Paid in full", :g! is equivalent to :v|
+|`:g!/^\d/m$`|For any line that does not start with a digit move it to the end of the file|
+|`[^,]*`|Match characters that are not commas, useful when mathing csv data|
