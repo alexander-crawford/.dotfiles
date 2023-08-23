@@ -4,9 +4,15 @@ set number
 set relativenumber
 " Show the row and column number of the cursor 
 set ruler
-" size of a hard tabstop
+" Size of a hard tabstop
 set tabstop=2
-" always uses spaces instead of tab characters
+" Always uses spaces instead of tab characters
 set expandtab
-" size of an "indent"
+" Size of an indent
 set shiftwidth=2
+" Pattern searches should ignore case
+set ignorecase
+" Copy indent from current line when starting a new line
+set autoindent
+" Write the contents of a changed buffer when moving to another file
+set autowrite
