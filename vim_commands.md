@@ -291,3 +291,15 @@
 |`:g!/Paid in full/s/$/Overdue`|Append "overdue" to each line not parked "Paid in full", :g! is equivalent to :v|
 |`:g!/^\d/m$`|For any line that does not start with a digit move it to the end of the file|
 |`[^,]*`|Match characters that are not commas, useful when mathing csv data|
+|`:g/^Chapter/.2+w >> begin`|Write the second line below any line starting with 'Chapter' to a file named beigin|
+|Advanced editing||
+|`:set ic`|Ignore case in pattern searches/g|
+|`:set noic`|Do not ignore case in pattern searches/g|
+|`:set ignorecase`|Many set commands have both complete names and abbreviations/g|
+|`:set ic!`|An option can be toggled with/g|
+|`:set all`|Check all options in use|
+|`:set option?`|Get the curreny value of an option|
+|`:set`|Shows options you have changed in the current session|
+|`:source ~/.vimrc`|Reread vim config file|
+|`set exrc`|When added to the vimrc in the home folder allows the reading of a vimrc file from the current directory|
+|`:set showmatch`|When a bracket is inserted breifly jump to the matching one|
