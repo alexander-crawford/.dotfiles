@@ -303,3 +303,11 @@
 |`:source ~/.vimrc`|Reread vim config file|
 |`set exrc`|When added to the vimrc in the home folder allows the reading of a vimrc file from the current directory|
 |`:set showmatch`|When a bracket is inserted breifly jump to the matching one|
+|Executing Unix Commands||
+|`:!command`|Tell ex to create a shell and regard what follows as a unix command|
+|`:read !date or :r !date`|Read the results from a unix command into the file|
+|`:r !sort phone`|Read the contents of a file called phone after it has been passed through the sort filter|
+|`:!ls`|List the contents of the current directory|
+|`:$r !spell %`|Create a list of misspelled words at the end of the file|
+|`:1,9!sort`|Pass lines 1 to 9 into the sort filter and replace them in place|
+|`:%!sort`|Sort the whole file|
