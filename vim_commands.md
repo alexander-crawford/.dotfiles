@@ -311,3 +311,11 @@
 |`:$r !spell %`|Create a list of misspelled words at the end of the file|
 |`:1,9!sort`|Pass lines 1 to 9 into the sort filter and replace them in place|
 |`:%!sort`|Sort the whole file|
+|Savings Commands||
+|`:ab abbr phrase`|Whenever the abbreviation is typed in insert mode the phrase will be inserted|
+|`:uab abbr`|Disable an abbrevation|
+|`:ab`|List currently defined abbreviations|
+|`:map x sequence`|Define 'x' as a sequence of editing commands|
+|`:unmap x`|Disable the commands set for x|
+|`:map`|List all mapped characters|
+|`:map v dwelp`|Reverse the order of 2 words on press of the 'v' character, first delete the word (dw), move the end of the next word (e), move one space to the right (l), put the deleted word there (p)|
