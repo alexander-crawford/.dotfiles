@@ -319,3 +319,7 @@
 |`:unmap x`|Disable the commands set for x|
 |`:map`|List all mapped characters|
 |`:map v dwelp`|Reverse the order of 2 words on press of the 'v' character, first delete the word (dw), move the end of the next word (e), move one space to the right (l), put the deleted word there (p)|
+|`:map <leader>q :q<cr>`|The default leader key is '\' (backslash), now entering \q exits vim via :quit|
+|`:let mapleader="X"`|Changes the leader key to 'X'|
+|`CTRL-V`|Used to escape specation characters when creating a map|
+|`:map e ea`|When moving to the end of a word go into insert mode automatically|
