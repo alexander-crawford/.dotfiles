@@ -323,3 +323,8 @@
 |`:let mapleader="X"`|Changes the leader key to 'X'|
 |`CTRL-V`|Used to escape specation characters when creating a map|
 |`:map e ea`|When moving to the end of a word go into insert mode automatically|
+|`:map V lbi<B>^[e</B>^[`|Place the word in bold tags, returning to normal mode is done by `CTRL+v` and then pressing escape, this shows as `^[` in the map, e also refereces the previous map (ea), recursive maps are set via `remap`|
+|`:map = xf)xn`|Repeatedly find and remove brackets from around a word, assumes the first bracket has been founnd with `/)`|
+|`:map g I/* ^[A */^[`|Place C/C++ comments around the entire line|
+|`:map! + ^[bi<I>^[ea</I>`|Pressing `+` in insert mode adds html italic tags around the previous word, the `!` overrides the normal key operation for use in insert mode|
+|`:unmap! +`|Reinstate a character for normal typing|
