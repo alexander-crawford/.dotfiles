@@ -328,3 +328,5 @@
 |`:map g I/* ^[A */^[`|Place C/C++ comments around the entire line|
 |`:map! + ^[bi<I>^[ea</I>`|Pressing `+` in insert mode adds html italic tags around the previous word, the `!` overrides the normal key operation for use in insert mode|
 |`:unmap! +`|Reinstate a character for normal typing|
+|`:map #2 i<I>^[`|When the F2 key is pressed enter insert mode insert a italic tag and then return to command mode, F1 is reserved for the helop secreen|
+|`qtitest^[q`|`@t` enters insert mode, adds the text "test" and returns to normal mode, `q` starts the recording, `t` chooses the function key and `q` stops the recording.|
