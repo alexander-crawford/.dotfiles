@@ -330,3 +330,7 @@
 |`:unmap! +`|Reinstate a character for normal typing|
 |`:map #2 i<I>^[`|When the F2 key is pressed enter insert mode insert a italic tag and then return to command mode, F1 is reserved for the helop secreen|
 |`qtitest^[q`|`@t` enters insert mode, adds the text "test" and returns to normal mode, `q` starts the recording, `t` chooses the function key and `q` stops the recording.|
+|`@@`|Repeat the last `@` function|
+|`s/test/tested`|Writing the follwing line in the editor and deleting it to the `g` register means it can be called from command mode via `:@g`|
+|`s/test/tested`|Placing the following in a file called `script` means it can be called from inside vim using `:so script`, it can also be made use of from the command line via `ex -s filename < script`|
+|`for file in "$@" do ex -s "$file" < exscript done`|Loop over every file passed as an arugment and apply the exscipt to each of those files|
