@@ -335,3 +335,11 @@
 |`s/test/tested`|Placing the following in a file called `script` means it can be called from inside vim using `:so script`, it can also be made use of from the command line via `ex -s filename < script`|
 |`for file in "$@" do ex -s "$file" < exscript done`|Loop over every file passed as an arugment and apply the exscipt to each of those files|
 |for file in "$@"<br> do<br> ex -s "$file" << end-of-script<br> g/their/s//their/g<br> g/writeable/s//writable/g<br> wq<br> end-of-script<br> done <br>|Here document useful for a one time series of edits|
+|Indentation control||
+|`CTRL-T`|Indent one level|
+|`CTRL-D`|Remove one level of indentation|
+|`CTRL-U`|Erases the entire input entered so far|
+|`>>`|Add one level of indentation|
+|`<<`|Remove one level of indentation|
+|`:set list`|Display invisible characters|
+|`:retab`|Convert existing tabs to spaces|
