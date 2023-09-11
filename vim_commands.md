@@ -343,3 +343,10 @@
 |`<<`|Remove one level of indentation|
 |`:set list`|Display invisible characters|
 |`:retab`|Convert existing tabs to spaces|
+|Tags||
+|`%`|Jump to the next opening bracket|
+|`:set showmatch`|Jump to the matching brakcet before moving to the current position|
+|`:!ctags -R *`|Create a tag file describing all files, `universal-ctags` package is required|
+|`:tag name`|Looks at the tag file and jumps to the file containing that function name, also works for most other types, enum, etc.|
+|`CTRL-]`|Does the same as `:tag name` but for the word starting at the cursor position|
+|`CTRL-T`|Return to the saved location before going to a tag|
