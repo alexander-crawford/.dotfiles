@@ -350,3 +350,4 @@
 |`:tag name`|Looks at the tag file and jumps to the file containing that function name, also works for most other types, enum, etc.|
 |`CTRL-]`|Does the same as `:tag name` but for the word starting at the cursor position|
 |`CTRL-T`|Return to the saved location before going to a tag|
+|`https://vimawesome.com/`|Vim Plugins, includes lines for Vundle|

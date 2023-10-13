@@ -1,3 +1,19 @@
+" be iMproved, required
+set nocompatible              
+" required
+filetype off                  
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'aklt/plantuml-syntax'
+Plugin 'othree/javascript-libraries-syntax.vim'
+" required
+call vundle#end()            
+" required
+filetype plugin indent on    
+" see :h vundle for more details
 " Show line numbers 
 set number
 " Show relative line numbers 
