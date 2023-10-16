@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'scrooloose/nerdtree'
 " required
 call vundle#end()            
 " required
