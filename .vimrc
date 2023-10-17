@@ -10,6 +10,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'xuyuanp/nerdtree-git-plugin'
+Plugin 'tpope/vim-fugitive'
+Plugin 'valloric/youcompleteme'
+Plugin 'mattn/emmet-vim'
 " required
 call vundle#end()            
 " required

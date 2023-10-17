@@ -353,3 +353,18 @@
 |Plug-ins||
 |`https://vimawesome.com/`|Vim Plugins, includes lines for Vundle|
 |`editorconfig.org`|Maintains consistent coding styles.|
+|NERDTree||
+|`?`|Help menu|
+|`i`|Open file in new window (:split)|
+|`o`|Expand / contract a directory|
+|`s`|Open file in new window (:vsplit)|
+|`t`|Open in a new tab|
+|`T`|Open in a new tab silently|
+|Fugitive||
+|`:G status`|Check git status in vim|
+|`:G`|Summary window|
+|You complete setup after plugin install||
+|`apt install build-essential cmake vim-nox python3-dev`||
+|`apt install mono-complete golang nodejs default-jdk npm`||
+|`cd ~/.vim/bundle/YouCompleteMe`||
+|`python3 install.py --all`||
