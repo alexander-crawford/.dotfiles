@@ -37,3 +37,5 @@ set ignorecase
 set autoindent
 " Write the contents of a changed buffer when moving to another file
 set autowrite
+" Redefine emmet trigger key
+let g:user_emmet_leader_key=','
