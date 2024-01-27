@@ -7,6 +7,7 @@ sudo npm install -g live-server
 
 # Create sym links
 ln -sf ~/.dotfiles/.bashrc ~/.bashrc
+mkdir -p ~/.config/i3
 ln -sf ~/.dotfiles/.config/i3/config ~/.config/i3/config
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
