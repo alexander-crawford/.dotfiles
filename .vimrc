@@ -33,11 +33,11 @@ set relativenumber
 " Show the row and column number of the cursor 
 set ruler
 " Size of a hard tabstop (default 8)
-set tabstop=2
+set tabstop=4
 " Always uses spaces instead of tab characters
 set expandtab
 " Size of an indent (default 8)
-set shiftwidth=2
+set shiftwidth=4
 " Pattern searches should ignore case
 set ignorecase
 " Copy indent from current line when starting a new line
@@ -46,3 +46,18 @@ set autoindent
 set autowrite
 " Redefine emmet trigger key
 let g:user_emmet_leader_key=','
+" Highlight all instances of a matched search term 
+set hlsearch
+" Highlight the 80th column with a different color
+set colorcolumn=80
+" Highlight the screen column of the cursor with CursorColumn
+set cursorcolumn
+" Highlight the text line of the cursor
+set cursorline
+" Change the default size of NERDTree
+:let g:NERDTreeWinSize=40
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" Stop showing preview window on code completion
+set completeopt-=preview
+noremap <C-n> :NERDTreeToggle<CR>
