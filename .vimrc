@@ -7,13 +7,20 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+" Plant UML syntax highlighting 
 Plugin 'aklt/plantuml-syntax'
-Plugin 'othree/javascript-libraries-syntax.vim'
+" File tree
 Plugin 'scrooloose/nerdtree'
-Plugin 'xuyuanp/nerdtree-git-plugin'
+" Vim Git wrapper
 Plugin 'tpope/vim-fugitive'
+" Enables :GBrowse from fugitive.vim to open GitHub URLs.
+Plugin 'tpope/vim-rhubarb'
+" Code completion
 Plugin 'valloric/youcompleteme'
+" Emmet for vim 
 Plugin 'mattn/emmet-vim'
+" Syntax checking and semantic errors
+Plugin 'w0rp/ale'
 " required
 call vundle#end()            
 " required
