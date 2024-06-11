@@ -138,8 +138,7 @@ function gitc {
 }
 
 function live-firefox {
-  firefox $1
-  ls $1 | entr xdotool search --name "Mozilla Firefox" key F5
+  ag -l | entr xdotool search --name "Mozilla Firefox" key F5
 }
 
 function live-script {
