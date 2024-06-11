@@ -230,3 +230,5 @@ default_border pixel 2
 exec --no-startup-id feh --recursive --bg-tile --randomize ~/.config/i3/background_images/*
 
 exec xrandr --output DVI-D-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off
+# Pomodoro timer on start
+exec "gnome-pomodoro --no-default-window --start"
