@@ -145,6 +145,11 @@ function live-script {
   ag -l | entr -c $1 
 }
 
+function github-develop {
+  gh issue develop "$1" --name issues/"$1" --checkout
+  gh issue edit "$1" --add-assignee "@me"
+}
+
 # Color man pages
 export LESS_TERMCAP_mb=$'\e[1;32m'
 export LESS_TERMCAP_md=$'\e[1;32m'
