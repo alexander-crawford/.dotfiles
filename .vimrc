@@ -20,7 +20,11 @@ Plugin 'valloric/youcompleteme'
 " Emmet for vim 
 Plugin 'mattn/emmet-vim'
 " Syntax checking and semantic errors
-Plugin 'w0rp/ale'
+Plugin 'dense-analysis/ale'
+" Display tags in a window
+Plugin 'preservim/tagbar'
+" Vue language support 
+Plugin 'yaegassy/coc-volar'
 " required
 call vundle#end()            
 " required
