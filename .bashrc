@@ -162,3 +162,7 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 # Vim mode in terminal 
 set -o vi 
 VISUAL=vim
+
+# Laravel
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
