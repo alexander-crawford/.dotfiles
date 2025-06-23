@@ -230,3 +230,5 @@ exec xrandr --output eDP --off --output HDMI-A-0 --primary --mode 2560x1440 --po
 workspace 1 output HDMI-A-0 
 # Pomodoro timer on start
 exec "gnome-pomodoro --no-default-window --start"
+# Make picutre in picture (firefox pop out) sticky 
+for_window [title="Picture-in-Picture"] sticky enable
