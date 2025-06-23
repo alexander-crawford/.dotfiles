@@ -10,7 +10,6 @@ ln -sf ~/.dotfiles/.bashrc ~/.bashrc
 mkdir -p ~/.config/i3
 ln -sf ~/.dotfiles/.config/i3/config ~/.config/i3/config
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
-ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # Download Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
