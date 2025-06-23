@@ -225,10 +225,8 @@ bindsym XF86AudioLowerVolume exec amixer -q -D pulse sset Master 5%- && pkill -R
 bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN+10 i3blocks
 # creates 2 px border without a title
 default_border pixel 2
-
-# background image
-exec --no-startup-id feh --recursive --bg-tile --randomize ~/.config/i3/background_images/*
-
-exec xrandr --output DVI-D-1 --off --output HDMI-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --off
+# Set displays
+exec xrandr --output eDP --off --output HDMI-A-0 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output DisplayPort-0 --off --output DisplayPort-1 --off
+workspace 1 output HDMI-A-0 
 # Pomodoro timer on start
 exec "gnome-pomodoro --no-default-window --start"
