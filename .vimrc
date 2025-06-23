@@ -65,3 +65,7 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 " Stop showing preview window on code completion
 set completeopt-=preview
 noremap <C-n> :NERDTreeToggle<CR>
+" Do not  open fold when the cursor moves into them as a result of a search command
+set foldopen-=search
+" Override `:G commit` to enable spell check and enter insert mode
+command! Gcommit execute 'G commit' | set spell | startinsert
