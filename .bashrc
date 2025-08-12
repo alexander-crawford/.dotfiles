@@ -166,3 +166,4 @@ VISUAL=vim
 # Laravel
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+alias zeal='flatpak run org.zealdocs.Zeal &'
