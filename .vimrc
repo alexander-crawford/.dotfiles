@@ -69,3 +69,5 @@ noremap <C-n> :NERDTreeToggle<CR>
 set foldopen-=search
 " Override `:G commit` to enable spell check and enter insert mode
 command! Gcommit execute 'G commit' | set spell | startinsert
+" Enable spell check for Markdown files
+autocmd BufRead,BufNewFile *.md setlocal spell
