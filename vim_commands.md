@@ -368,3 +368,71 @@
 |`apt install mono-complete golang nodejs default-jdk npm`||
 |`cd ~/.vim/bundle/YouCompleteMe`||
 |`python3 install.py --all`||
+|||
+|Vim (improvements over vi)||
+|`!ls $VIMRUNTIME/doc`|Vim documentation, accessed via the `help` menu|
+|`%`|Read only current file name|
+|`:`|Read only last command|
+|`"_`|Black hole register, deletes text without affecting normal registers|
+|`:set compatible`|vi-compatible mode|
+|`gvim` or `vim -g`|Launch graphical vim|
+|`evim` or `vim -y`|Launch easy vim, opens in insert mode|
+|`vimtutor`|Learn vim, takes about 30 minutes to complete|
+|[open vim](https://openvim.com/)|Learn vim oneline|
+|[vim adventures](https://vim-adventures.com/)|Learn vim oneline|
+|`:h help split<TAB>`|Cycle though all help menus for split|
+|Command-line options||
+|`echo "Hello World!" | vim -`|A hyphen tells vim that the text is coming from stdin|
+|`vim -u none -- file.txt`|A double hyphen `--` is used to indicate an end of options|
+|`vim -b`|Edit in binary mode|
+|`vim -c`|Execute an ex command|
+|`vim -C`|Vim compatible vi mode|
+|`vim -d`|Diff mode|
+|`vim -R`|Read only suggestion|
+|`vim -M`|Immutable|
+|`vim -o *txt`|All all text files in separate windows, -o[n] `n` can also specify the number of windows|
+|`vim -O`|Same as above but for vertically split windows|
+|`vim -Z`|Restricted mode (sandboxed)|
+|`vim --remote`|Reuse existing vim instance|
+|Command names||
+|`view`|Read only mode|
+|`vimdiff`|Diff mode|
+|The `.vimrc` file||
+|`"`|Comments start with a double quote|
+|`set` and `:set`|Equivalent setting of options|
+|New motion commands||
+|`50%`|Go to the 50% point in the file|
+|`go n`|Go to the nth byte in the buffer|
+|More visual mode||
+|`v2aw`|Select 2 words in visual mode with white space|
+|`v2aW`|Select 2 words and punctuation in visual mode with white space|
+|`v2iw`|Select 2 words in visual mode without white space|
+|`vis`|Highlight sentence (No white space)|
+|`vas`|Highlight sentence (With white space)|
+|`vip`|Highlight paragraph (No white space)|
+|`vap`|Highlight paragraph  (With white space)|
+|`:help text-objects`|A more detailed explanation of text objects|
+|Extended regular expressions||
+|`a\|b`|a or b|
+|`.*Peter\&.*Bob`|Lines that contain BOTH Peter and Bob regardless of order|
+|`g/Ho\(use\|me\)\+`|Match one or more of the preceding regular expressions, 'house' and 'home' but not 'ho'|
+|`colou\?r`|The 'u' can occur zero or one times|
+|`A\{3,4}`|Match between 3 and 4 instance of the letter 'A'|
+|`A\{3}`|Match exactly 3 instances of the letter 'A'|
+|`A\{3,}`|At least 4 repetitions|
+|`A\{,3}`|0 to 3 repetitions|
+|`A\{}`|0 or more repetitions|
+|`\{-n,m}`|n to m as few as possible|
+|`\{-n}`|Match n times|
+|`\{-n,}`|Match at least n, as few as possible|
+|`\{-,m}`|Zero to m as few as possible|
+|`~`|Reuse the last replacement string|
+|`\(...\)`|Provide groupings|
+|`\1,\2..`|Refer to groupings|
+|`help /character-classes`|Table of character classes|
+|Extended undo||
+|`u`|Undo|
+|`n CTRL+R`|Redo n changes|
+|`g-`|Go to the older text state|
+|`g+`|Go to the newer text state|
+|`h undo-tree`|Undo tree documentation|
