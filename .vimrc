@@ -59,7 +59,7 @@ set cursorcolumn
 " Highlight the text line of the cursor
 set cursorline
 " Change the default size of NERDTree
-:let g:NERDTreeWinSize=40
+let g:NERDTreeWinSize=40
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 " Stop showing preview window on code completion
@@ -71,3 +71,5 @@ set foldopen-=search
 command! Gcommit execute 'G commit' | set spell | startinsert
 " Enable spell check for Markdown files
 autocmd BufRead,BufNewFile *.md setlocal spell
+" While typing a search command, show where the pattern, as it was typed so far, matches.
+set incsearch
