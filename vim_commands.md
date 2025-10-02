@@ -390,8 +390,6 @@
 |`vim -d`|Diff mode|
 |`vim -R`|Read only suggestion|
 |`vim -M`|Immutable|
-|`vim -o *txt`|All all text files in separate windows, -o[n] `n` can also specify the number of windows|
-|`vim -O`|Same as above but for vertically split windows|
 |`vim -Z`|Restricted mode (sandboxed)|
 |`vim --remote`|Reuse existing vim instance|
 |Command names||
@@ -436,3 +434,68 @@
 |`g-`|Go to the older text state|
 |`g+`|Go to the newer text state|
 |`h undo-tree`|Undo tree documentation|
+|Splitting windows in vim||
+|`vim -o *txt`|All all text files in separate windows, -o[n] `n` can also specify the number of windows|
+|`vim -O`|Same as above but for vertically split windows|
+|`:split` or 'CTRL W s'|Split the current buffer horizontally|
+|`:vsplit` or 'CTRL W v'|Split the current buffer vertically|
+|`15split ++encoding=utf-8 + .vimrc`|Open .vimrc in a window with height 15, utf-8 encoding at the last line|
+|`:new` or 'CTRL W n'|Open a new horizontal window|
+|`:vnew`|Open a new vertical window|
+|`:sview .vimrc`|Same as split but opens a read only buffer|
+|`sfind`|Same as split but search for a file in the path option first|
+|Moving between windows in vim||
+|`CTRL W w`|Cycle to the next window|
+|`CTRL W W`|Cycle to the previous window|
+|`CTRL W t`|Move to the top leftmost window|
+|`CTRL W b`|Move to the bottom rightmost window|
+|`CTRL W p`|Move to the last accessed window|
+|Moving windows in vim||
+|`n CTRL W x`|Exchange a window with the nth window in a column|
+|`CTRL W r`|Rotate windows downwards|
+|`CTRL w K`|Move the window to the top of the screen (full width)|
+|`CTRL w J`|Move the window to the bottom of the screen (full width)|
+|`CTRL w L`|Move the window to the right of the screen (full height)|
+|`CTRL w H`|Move the window to the left of the screen (full height)|
+|`CTRL w T`|Move the window to a new tab|
+|Resizing windows in vim||
+|`CTRL w =`|Resize all windows to equal size|
+|`CTRL w -`|Decrease the height of the window|
+|`CTRL w +`|Increase the height  of the window|
+|`z n ENTER`|Set the height of the window to n|
+|`CTRL w >`|Increase the width of the window|
+|`CTRL w <`|Decrease the width of the window|
+|`CTRL w _`|Increase to highest possible height|
+|`CTRL w |`|Increase to highest possible width|
+|`:set winwidth=n`|Make the in-focus window wider|
+|`:set winheight=n`|Make the in-focus window taller|
+|Buffers||
+|`ls` or `files` or `buffers`|List buffers|
+|`u`|Denotes an unlisted buffer that is only shown with `ls!`, for example the help buffer|
+|`%`|The buffer in focus|
+|`a`|Active (loaded and visible) buffer|
+|`h`|Hidden buffer|
+|`-`|Modifiable off|
+|`=`|Read only buffer|
+|`+`|A modified buffer|
+|`windo {cmd}`|Run a command for each window in a given tab|
+|`bufdo {cmd}`|Run a command for each buffer regardless of tab|
+|`:ba`|Open every buffer in a window|
+|`:[n]bd[!]`|Remove buffer 'n' from the buffer list, force removal of changed buffer with '!'|
+|`:bn`|Open buffer 'n' in the current window|
+|`:sbn`|Open buffer 'n' in a new window|
+|`:bn`|Go to the next buffer in the list|
+|`:bp`|Go to the previous buffer in the list|
+|`:bf`|Go to the first buffer in the list|
+|`:bl`|Go to the last buffer in the list|
+|Playing tag with windows||
+|`:ctags -R`|Generate a tags file|
+|`:stag tag`|Split the window and open the location of the found tag|
+|Tabbed editing||
+|`:tabnew filename`|Open a new tab with an optional file name|
+|`:tabclose`|Close the current tab|
+|`:tabonly`|Close all other tabs|
+|Closing and quitting windows||
+|`CTRL-W q`|Quit the current window|
+|`CTRL-W o`|Close all windows except the current window|
+|`CTRL-W c`|Close the current window, closes the window but never exits Vim|
