@@ -73,3 +73,5 @@ command! Gcommit execute 'G commit' | set spell | startinsert
 autocmd BufRead,BufNewFile *.md setlocal spell
 " While typing a search command, show where the pattern, as it was typed so far, matches.
 set incsearch
+" Always see a status line
+set laststatus=2
